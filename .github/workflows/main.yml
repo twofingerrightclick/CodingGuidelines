@@ -21,9 +21,9 @@ jobs:
     # Personal access token
         personal_token: ${{ secrets.PAT }}
     # The source path to the file(s) or folder(s) to copy from
-        src_path: docs 
+        src_path: /docs/. 
     # The destination path to copy the file(s) or folder(s) to
-        dst_path: docs
+        dst_path: /docs/
     # The name of the owner of the repository to push to
         dst_owner: twofingerrightclick
     # The name of the repository to push to
