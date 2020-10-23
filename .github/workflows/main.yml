@@ -1,4 +1,4 @@
-name: Manual Inputs
+name: Update Docs Folder on CodingGuidelinesSite
 on: 
   workflow_dispatch:
     inputs:
@@ -21,9 +21,9 @@ jobs:
     # Personal access token
         personal_token: ${{ secrets.PAT }}
     # The source path to the file(s) or folder(s) to copy from
-        src_path: ./docs 
+        src_path: docs 
     # The destination path to copy the file(s) or folder(s) to
-        dst_path: ./docs
+        dst_path: docs
     # The name of the owner of the repository to push to
         dst_owner: twofingerrightclick
     # The name of the repository to push to
@@ -31,7 +31,7 @@ jobs:
     # The branch name of the source repository
     #    src_branch: # optional, default is master
     # The branch name of the destination repository
-    #    dst_branch: # optional, default is master
+        dst_branch: main
     # Set to true if the dst_path should be emptied before copying
         clean: true
     # A glob pattern for filtering file names
