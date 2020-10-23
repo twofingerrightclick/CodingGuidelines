@@ -16,7 +16,7 @@ jobs:
       uses: andstor/copycat-action@v3.2.3
       with: 
     # Personal access token
-        personal_token: ${{ secrets.GITHUB_TOKEN }}
+        personal_token: ${{ secrets.REPO_PAT }}
     # The source path to the file(s) or folder(s) to copy from
         src_path: docs/. 
     # The destination path to copy the file(s) or folder(s) to
